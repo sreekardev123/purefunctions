@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> <u>ImPure Function :-
+    </u></h3><br>
+       <u> Definition:-</u> An impure function is one that may produce different results even with the same input, or that causes side effects such as modifying external variables, performing I/O operations, etc.
+    </p>
+    <p>Example:-</p>
+    <p> 
+        function isPrimeWithLog(num) {<br>
+            if (num <= 1) {<br>
+              console.log(`${num} is not prime`);<br>
+              return false;<br>
+            }<br>
+            
+            for (let i = 2; i < num; i++) {<br>
+              if (num % i === 0) {<br>
+                console.log(`${num} is not prime`);<br>
+                return false;<br>
+              }<br>
+            }<br>
+            
+            console.log(`${num} is prime`);<br>
+            return true;<br>
+        }<br>
+          
+          console.log(isPrimeWithLog(5));  // Output: "5 is prime", true<br>
+          console.log(isPrimeWithLog(4));  // Output: "4 is not prime", false
+          
+      </p>
+      <script>
+        function isPrimeWithLog(num) {
+//   if (num <= 1) {
+//     console.log(`${num} is not prime`);
+//     return false;
+//   }
+  
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      console.log(`${num} is not prime`);
+      return false;
+    }
+  }
+  
+  console.log(`${num} is prime`);
+  return true;
+}
+
+console.log(isPrimeWithLog(5));  // Output: "5 is prime", true
+console.log(isPrimeWithLog(4));  // Output: "4 is not prime", false
+
+      </script>
+</body>
+</html>

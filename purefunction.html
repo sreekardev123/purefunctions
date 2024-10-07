@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> <u>Pure Function :-
+    </u></h3><br>
+       <u> Definition:-</u> A pure function is one that always produces the same output given the same input, and it does not cause any side effects (like changing external variables).
+    </p>
+    <p>Example:-</p>
+    <p> function fibonacci(n) {<br>
+        if (n <= 1) return n;<br>
+        return fibonacci(n - 1) + fibonacci(n - 2);<br>
+    }<br>
+      
+      console.log(fibonacci(6));  // Output: 8<br>
+      console.log(fibonacci(6));  // Output: 8
+      </p>
+    <script>
+    
+        function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.log(fibonacci(6));  // Output: 8
+console.log(fibonacci(6));  // Output: 8
+
+    </script>
+    
+</body>
+</html>
